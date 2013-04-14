@@ -10,6 +10,6 @@ class Api::PhotosController < PhotosController
 
   def create
     @photo = Photo.create(params[:photo])
-    respond_with(@photo, :methods => ['image_path'], :only => [:x_pos, :y_pos, :z_pos, :scale])
+    respond_with(@photo, :location => nil, :methods => ['image_path'], :only => [:x_pos, :y_pos, :z_pos, :scale])
   end
 end

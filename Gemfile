@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
 
+# install & configure mongodb and redis before you bundle install
+gem 'mongoid'
+gem 'redis'
+gem 'redis-namespace'
+gem 'resque'
 gem 'rails', '3.2.13'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'sqlite3'
-gem 'haml'
 gem 'jquery-rails'
 
 # For file uploads  
 #gem 'paperclip', '~> 3.4.0'
-gem 'mongoid'
 gem 'mongoid_paperclip_queue'
 gem 'aws-sdk', '~> 1.6.0'
 gem 'aws-s3'
@@ -29,8 +29,10 @@ group :assets do
   gem 'backbone-on-rails'
   gem 'backbone-support'
   gem 'eco'
+  gem 'haml'
   gem 'haml_assets'
   gem 'sass'
+  
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

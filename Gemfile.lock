@@ -209,6 +209,9 @@ DEPENDENCIES
   mongoid_paperclip_queue
   rails (= 3.2.13)
   rb-readline
+  redis
+  redis-namespace
+  resque
   sass
   sass-rails (~> 3.2.3)
   sqlite3
