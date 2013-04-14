@@ -5,7 +5,6 @@ window.Jqueryfileuploadbackbone =
  Routers:{}
  ManageImages: ->
   new Jqueryfileuploadbackbone.Routers.Photos()
-  alert 'inbackbone'
   Backbone.history.start()
 
 $(document).ready ->
@@ -21,7 +20,6 @@ window.Jqueryfileuploadbackbone = {
   Routers: {},
   ManageImages: function() {
     new Jqueryfileuploadbackbone.Routers.Photos();
-    alert('in backbone');
     return Backbone.history.Start();
   }
 };

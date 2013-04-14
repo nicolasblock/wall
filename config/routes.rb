@@ -3,8 +3,9 @@ Wall::Application.routes.draw do
 
   get "photos/create"
 
-  scope 'api' do
-    resources :photos, format: false
+  #adds a viewless path
+  namespace 'api' do
+    resources :photos, :defaults => { :format => 'json' }
   end
   
   # The priority is based upon order of creation:
