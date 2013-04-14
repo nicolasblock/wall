@@ -10,7 +10,9 @@ gem 'haml'
 gem 'jquery-rails'
 
 # For file uploads  
-gem 'paperclip', '~> 3.4.0'
+#gem 'paperclip', '~> 3.4.0'
+gem 'mongoid'
+gem 'mongoid_paperclip_queue'
 gem 'aws-sdk', '~> 1.6.0'
 gem 'aws-s3'
 gem 'jquery-fileupload-rails'
