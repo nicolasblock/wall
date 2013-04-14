@@ -13,13 +13,13 @@ class Jqueryfileuploadbackbone.Views.PhotosAddView extends Backbone.View
     data.submit()
 
 
- formData: [
-  name: 'authenticity_token'
-  value: $("meta[name=\'csrf-token\']").attr('content')
- ]
+   formData: [
+    name: 'authenticity_token'
+    value: $("meta[name=\'csrf-token\']").attr('content')
+   ]
 
-done: (e, data) ->
- window.location = '/'
+   done: (e, data) ->
+    window.location = '/'
 
 
 ###

@@ -1,7 +1,11 @@
 class Jqueryfileuploadbackbone.Views.PhotosIndex extends Backbone.View
   template: JST['photos/index']
+  initialize :->
+   _.bindAll this,"render"
+   @collection.bind "reset", @render
+   @
   render:->
-   @$el.html @template
+   @$el.html @template content : @model
    @
 
 ###
