@@ -3,6 +3,10 @@ Wall::Application.routes.draw do
 
   get "photos/create"
 
+  scope 'api' do
+    resources :photos, format: false
+  end
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
